@@ -14,10 +14,10 @@
 <body>
     <!----Хедер проставить ссылки-->
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
                 <nav class="header-nav">
                     <a class="header-logo" href="./index.html">Web<span class="header-logo-part">Studio</span> </a>
-                    <ul class="header menu">
+                    <ul class="header-menu">
                         <!---Ссылка "Студия" должна вести на новую страницу-->
                         <li class="menu-item">
                             <a class="menu-item-link active current" href="./index.html">Студия</a>
@@ -26,19 +26,21 @@
                         <li class="menu-item">
                             <a class="menu-item-link" href="./portfolio.html">Портфолио</a>
                         </li>
-                        <!---Ссылка "Контакты" ведет в футер-->
                         <li class="menu-item">
                             <a class="menu-item-link" href="">Контакты</a>
                         </li>
-                        <li class="contacts-item">
-                            <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        </li>
-                        <li class="contacts-item">
-                            <a class="phone" href="tel:+380961111111">+38 096 111 11 11</a>
-                        </li>
+                        
                     </ul>
                 </nav>
-           
+                <!---Ссылка "Контакты" ведет в футер-->
+                <ul class="contacts">
+                    <li class="contacts-item">
+                        <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="contacts-item">
+                        <a class="phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                </ul>
         </div>               
     </header>
         <main class="main">
@@ -138,6 +140,6 @@
                 </div>  
             </footer>
         </main>                
-    
+
 </body>
 </html>

@@ -14,13 +14,18 @@ font-family: 'Roboto', sans-serif;*/
     box-sizing: border-box;
 }
 
+ul,p,h1,h2,h3,h4{
+    padding: 0px;
+    margin: 0px;
+}
+
 .container{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 :root{
@@ -47,14 +52,11 @@ font-family: 'Roboto', sans-serif;*/
 body{
     font-family: var(--main-font);
     color: var(--grey-font);
-    
+
 }
+
 /*Header*/
 .header{
-    display: flex;
-outline-style: dotted;
-    
-
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -62,28 +64,39 @@ color:var(--black-font);
 background-color: var(--header-color);
 
 }
+
+.header-container{
+    display: flex;
+    align-items: center;
+}
 .header-nav{
     display: flex;
     align-items: center;
-   
+
 }
 
+.header-menu{
+    display: flex;
+}
 
 
 .menu-item{
-    display: flex;
     list-style-type: none;
-    margin: 50px;
-   
 }
-.menu-item:last-child{
-    margin-left: 331px;
+.menu-item:not(:last-child) {
+    margin-right: 50px;  
+
 }
-.contacts-item{
+.contacts{
     display: flex;
-    margin: 50px;
+    margin-left: auto;
+}
+.contacts-item:not(:last-child){
+    margin-right: 50px;    
 }
 .menu-item-link{
+    display: block;
+    padding: 32px 0px;
     text-decoration: none;  
     color: inherit;
 }
@@ -169,7 +182,7 @@ button:focus{
     background-color: var(--services-color);
 }
  .studio-item-title{
-    
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -177,7 +190,7 @@ button:focus{
     color:var(--black-font)
  }
  .studio-item-descr{
-   
+
     font-size: 14px;
     line-height: 1.71;
     color: var(--grey-font);
@@ -301,7 +314,7 @@ list-style-type: none;
 .filter-button:focus{
     color: var(--white-font);
     background-color: var(--blue-font);
-    
+
 }
 .services-list-p2{
     list-style-type: none;
