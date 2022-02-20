@@ -8,11 +8,7 @@ font-family: 'Roboto', sans-serif;*/
 #FFFFFF - Header
 */
 
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
+
 
 ul,p,h1,h2,h3,h4{
     padding: 0px;
@@ -36,7 +32,7 @@ ul,p,h1,h2,h3,h4{
     /*Цвет фона*/
     --header-color: #FFFFFF;
     --cta-footer-color: #2F303A; 
-    --services-color: #e5e5e5;
+    --services-color: #FFFFFF;
     --team-color: #F5F4FA; 
 
     /*Цвет шрифтов*/
@@ -62,16 +58,22 @@ body{
     line-height: 1.14;
     color:var(--black-font);
     background-color: var(--header-color);
+    border-bottom: solid  1px;
+    border-color: #ECECEC;
+    
 }
 
 .header-container{
     display: flex;
     align-items: center;
+  
+
 }
 
 .header-nav{
     display: flex;
     align-items: center;
+    
 }
 
 .header-menu{
@@ -150,12 +152,12 @@ body{
     background-color: var(--cta-footer-color);
 }
 .cta-page{
+    padding: 200px 0px 200px 0px;
    text-align: center;
 }
 .cta-page-title{
     display: block;
     margin: auto;
-    padding: 200px 0px 0px 0px;
     width: 696px;
 
     font-weight: 900;
@@ -168,7 +170,7 @@ body{
 
 
 .cta-page-button{
-    margin: 30px 0px 200px 0px;
+    margin: 30px 0px 0px 0px;
     width: 200px;
     height: 50px;
 
@@ -191,21 +193,18 @@ button:focus{
 .studio{
     background-color: var(--services-color);
 }
-
-.studio-container{
-    display: flex;
-    margin: 94px 0px 0px 0px;
-    margin-left: auto;
-    margin-right: auto;
-
+.section{
+    padding: 94px 0px;
 }
+
 .studio-list{
     display: flex;
-    
-
-
+    margin: 0px 0px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.studio-item-item{
+.studio-list-item:not(:last-child){
+    margin-right: 30px;
     
    
 }
@@ -220,7 +219,6 @@ button:focus{
     color:var(--black-font)
  }
  .studio-item-descr{
-    margin-bottom: 94px;
     font-size: 14px;
     line-height: 1.71;
     color: var(--grey-font);
@@ -233,10 +231,11 @@ button:focus{
 
  .services{
      background-color:var(--services-color);
+     padding-top: 0px;
  }
 
  .services-container{
-     s
+     
      text-align: center;
  }
  .services-title{
@@ -257,7 +256,6 @@ button:focus{
 .services-item{
     width: 370px;
     list-style-type: none;
-    margin-bottom: 94px;
 }
 .services-item:not(:last-child){
     margin-right: 30px;
@@ -273,11 +271,10 @@ button:focus{
     
 }
 .services-team-title{
-    padding-top: 94px;
-    margin-bottom: 50px;
     text-align: center;
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+  
 
     font-weight: 700;
     font-size: 36px;
@@ -288,14 +285,12 @@ button:focus{
     display: flex;
 }
 .team-item{
-    margin-bottom: 94px;
     width: 270px;
-    height: 368px;
-
     list-style-type: none;
     background-color: #FFFFFF;
     border-bottom-right-radius:4px;
     border-bottom-left-radius:4px;
+    
     
 
 }
@@ -304,9 +299,7 @@ button:focus{
 }
 .team-member{
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 10px;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -315,25 +308,30 @@ button:focus{
 
 .team-member-position{
     text-align: center;
-    margin-bottom: 30px;
-
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     color: var(--grey-font);
 }
-
+.img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.team-descr{
+    padding: 30px 0px;
+}
 /*Footer*/
 
 .footer{
     background-color: var(--cta-footer-color);
+    padding:60px 0px;
 }
 
 .footer-logo{
     display: block;
-    padding-top: 60px;  
     margin-bottom: 20px;  
-    
+
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
@@ -366,7 +364,6 @@ button:focus{
 }
 .last{
     display: block;
-   padding-bottom: 60px;
 }
 .footer-item:hover,
 .footer-item:focus{
@@ -386,36 +383,20 @@ button:focus{
 
 /*Filter services*/
 
-.main{
-    background-color: var(--services-color);
-}
- .main-container{
-     
-    
-
- }
 
  .filter{
      display: flex;
+     margin-bottom: 50px;
+     justify-content: center;
     
  }
-.filter-list{
-    padding-top: 100px;
-    margin-bottom: 56px;
-    list-style-type: none;
-
-}
-
 .filter-list:not(:last-child){
-    margin-right: 30px;
+    margin-right: 8px;
+    list-style-type: none;
+    
+
 }
 
-.filter-list:first-child{
-    margin-left: auto;
-}
-.filter-list:last-child{
-    margin-right: auto;
-}
 .filter-button{
     padding: 6px 22px;
 
@@ -443,6 +424,8 @@ button:focus{
 }
    
 .services-list-p2{
+    border: solid 1px;
+    border-color: #EEEEEE;
     
 
     list-style-type: none;
@@ -451,26 +434,24 @@ button:focus{
     display: inline-block;
     text-decoration: none;
     width: 370px;
-    height: 404px;
     background-color: #FFFFFF;
-    Stroke: Solid #EEEEEE
+    
 
 }
 
 
 .services-list-p2:not(:nth-child(3n+3)){
-    margin-right: 30px;
+    margin-right: 25px;
+    
+  
+}
+
+
+.services-list-p2:nth-child(-n+6){
     margin-bottom: 30px;
 }
 
-.services-list-p2:nth-child(n+6){
-    padding-bottom: 94px;
-
-}
-
 .services-title-p2{
-    margin-top: 20px;
-    margin-left: 24px;
     margin-bottom: 4px;
 
     font-weight: 700;
@@ -480,10 +461,14 @@ button:focus{
     color: var(--black-font);
 }
 .services-text-p2{
-    margin-left: 24px;
+    
     padding-bottom: 20px;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--grey-font);
+}
+.services-descr{
+    padding: 24px 20px;
+    
 }
