@@ -190,6 +190,10 @@ button:focus{
 }
 
 /*Studio*/
+
+.advantages{
+    visibility: hidden;
+}
 .studio{
     background-color: var(--services-color);
 }
@@ -442,10 +446,7 @@ button:focus{
 
 .services-list-p2:not(:nth-child(3n+3)){
     margin-right: 25px;
-    
-  
 }
-
 
 .services-list-p2:nth-child(-n+6){
     margin-bottom: 30px;
@@ -471,4 +472,7 @@ button:focus{
 .services-descr{
     padding: 24px 20px;
     
+}
+.our-services{
+    visibility: hidden;
 }
